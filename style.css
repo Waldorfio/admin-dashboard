@@ -65,11 +65,17 @@ body,html {         /* Fixes issue of scrollbar appearing */
     .dashboard-siderbar-container {
         display: grid;
         grid-template-columns: 4fr 1fr;
+        grid-template-rows: 1fr 5r 1fr 5fr;
     }
         .your-stories {
-            grid-column: 1/4;
+            grid-column: 1/2;
+            grid-row: 1/2;
             font-weight: bold;
             background-color: rgb(226,232,240);
+        }
+        .announcements-title {
+            grid-column: 2/3;
+            grid-row: 1/2;
         }
             .dashboard {
                 display: grid;
