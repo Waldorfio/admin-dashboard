@@ -7,6 +7,13 @@ body,html {         /* Fixes issue of scrollbar appearing */
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
 
 .container {
     display: grid;
@@ -21,16 +28,23 @@ body,html {         /* Fixes issue of scrollbar appearing */
 
         background-color: rgb(25,146,212);
         color: white;
-        font-weight: bold;
     }
+        #dashboard-logo > a {
+            font-size: 22px;
+        }
 
     .banner1 {
         display: grid;
         grid-template-columns: 20px 4fr 60px 20px 1fr;
     }
-        .search-button, .notifications, .banner1 > .avatar {
+        #search-button, #notifications {
             border: 1px solid red;
         }
+        .banner1 > img {
+            border-radius: 50%;
+            height: 50px;
+            width: auto;
+          }
         .search-bar {
             background-color: rgb(226,232,240);
             border-radius: 10px;
@@ -40,8 +54,10 @@ body,html {         /* Fixes issue of scrollbar appearing */
         grid-template-columns: 1fr 4fr repeat(3, 1fr);
         align-content: center;
     }
-        .banner2 > .avatar {
-            border: 1px solid blue;
+        .banner2 > img {
+            border-radius: 50%;
+            height: 100px;
+            width: auto;
         }
         .greeting-container {
             display: grid;
