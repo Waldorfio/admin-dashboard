@@ -10,9 +10,16 @@ body,html {         /* Fixes issue of scrollbar appearing */
 a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    color: white;
+}
+.sidebar-left a {
     font-weight: bold;
     font-size: 16px;
+    color: white;
+}
+.trending a {
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
 }
 
 .container {
@@ -20,7 +27,6 @@ a {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
-
     .sidebar-left {
         grid-row: 1/5;
         display: grid;
@@ -32,91 +38,140 @@ a {
         #dashboard-logo > a {
             font-size: 22px;
         }
-
-    .banner1 {
+    .banner-container {
         display: grid;
-        grid-template-columns: 20px 4fr 60px 20px 1fr;
+        grid-template-rows: 1fr 2fr;
     }
-        #search-button, #notifications {
-            border: 1px solid red;
-        }
-        .banner1 > img {
-            border-radius: 50%;
-            height: 50px;
-            width: auto;
-          }
-        .search-bar {
-            background-color: rgb(226,232,240);
-            border-radius: 10px;
-        }
-    .banner2 {
-        display: grid;
-        grid-template-columns: 1fr 4fr repeat(3, 1fr);
-        align-content: center;
-    }
-        .banner2 > img {
-            border-radius: 50%;
-            height: 100px;
-            width: auto;
-        }
-        .greeting-container {
+        .banner1 {
             display: grid;
-            grid-template-rows: 1fr 2fr;
-
-            font-weight: bold;
+            grid-template-columns: 80px 6fr 1fr 1fr 2fr;
+            gap: 10px;
         }
-        button {
-            /* Removing default button effects */
-            border-color: #fff;
-            border-style: solid;
-            /* Adding new effects */
-            background-color: rgb(25,146,212);
-            color: white;
-            border-radius: 15px;
-            font-weight: bold;
+            #search-button, #notifications, #yoda-img1, .user-name, .search-bar {
+                align-self: center;
+            }
+            #search-button, #notifications {
+                justify-self: end;
+            }
+            #yoda-img1 {
+                justify-self: center;
 
-            margin: 10px 2px 10px 2px;
+                border-radius: 50%;
+                height: 50px;
+                width: auto;
+            }
+            .user-name {
+                justify-self: start;
+            }
+            .search-bar {
+                background-color: rgb(226,232,240);
+                border-radius: 10px;
+                height: 30px;
+            }
+        .banner2 {
+            display: grid;
+            grid-template-columns: 1fr 4fr repeat(3, 1fr);
         }
+            #yoda-img2 {
+                border-radius: 50%;
+                height: 100px;
+                width: auto;
+            }
+            .greeting-container {
+                display: grid;
+                grid-template-rows: 1fr 2fr;
 
-    .dashboard-siderbar-container {
+                font-weight: bold;
+            }
+            button {
+                margin: 10px 2px 10px 2px;
+
+                /* Removing default button effects */
+                border-color: #fff;
+                border-style: solid;
+                /* Adding new effects */
+                background-color: rgb(25,146,212);
+                color: white;
+                border-radius: 15px;
+                font-weight: bold;
+            }
+
+/* Dashboard & Announcements*/
+    .dashboard-sidebar-container {
         display: grid;
         grid-template-columns: 4fr 1fr;
-        grid-template-rows: 1fr 5r 1fr 5fr;
+        grid-template-rows: 1fr 5fr 1fr 5fr;
+        gap: 20px;
+
+        padding: 10px;
+        padding: 20px 30px 20px 20px;
+
+        background-color: rgb(226,232,240);
     }
-        .your-stories {
+        .your-project, .announcements-title, .trending-title {
+            display: grid;
+            align-content: end;
+
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .your-project {
             grid-column: 1/2;
             grid-row: 1/2;
-            font-weight: bold;
-            background-color: rgb(226,232,240);
         }
+        .dashboard {
+            grid-row: 2/5;
+            grid-column: 1/2;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 15px;
+
+            /* padding: 20px 20px 0 20px; */
+        }
+            .cards {
+                padding: 30px;
+
+                background-color: white;
+                box-shadow: 3px 7px rgb(207,213,220);
+                border-radius: 10px;
+            }
+
+        .announcements-title, .trending-title {
+            font-weight: bold;
+        }
+        .announcement, .trending {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+
+            padding: 30px;
+
+            font-size: 12px;
+            background-color: white;
+            box-shadow: 3px 7px rgb(207,213,220);
+            border-radius: 10px;
+        }
+            .specific-announcement, .user {
+                border-bottom: 1px solid rgb(210,210,210);
+            }
+            #last {
+                border-bottom: none;
+            }
+
         .announcements-title {
             grid-column: 2/3;
             grid-row: 1/2;
         }
-            .dashboard {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                gap: 15px;
-
-                padding: 20px 20px 0 20px;
-                background-color:rgb(226,232,240);
-            }
-                .cards {
-                background-color: white;
-                box-shadow: 3px 7px rgb(207,213,220);
-                /* border: 1px solid black; */
-                border-radius: 10px;
-                }
-
-            
-            .sidebar {
-                display: grid;
-                grid-template-rows: repeat(2, 1fr);
-
-                background-color: rgb(226,232,240);
-            }
-                /* .announcements, .trending {
-                    display: grid;
-                    grid-template-rows: 1fr 7fr;
-                } */
+        .announcement {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .trending-title {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .trending {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }

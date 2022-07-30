@@ -10,21 +10,6 @@
     
     <div class="container">
 
-        
-        <!-- <div class="sidebar-left">
-            <span class="sidebar-left-text">Dashboard</span>
-            <div class="home">Home</div>
-            <div class="profile">Profile</div>
-            <div class="messages">Messages</div>
-            <div class="history">History</div>
-            <div class="tasks">Tasks</div>
-            <div class="communities">Communities</div>
-            <span></span>
-            <div class="settings">Settings</div>
-            <div class="support">Support</div>
-            <div class="privacy">Privacy</div>
-        </div> -->
-
         <div class="sidebar-left">
             <span id="dashboard-logo" class="material-icons">space_dashboard<a href="">Dashboard</a></span>
             <span class="material-icons">home<a href="">Home</a></span>
@@ -39,29 +24,30 @@
             <span class="material-icons">verified_user<a href="">Privacy</a></span>
         </div>
 
-
-        <div class="banner1">
-            <span id="search-button" class="material-icons">search</span>
-            <div class="search-bar"></div>
-            <span id="notifications" class="material-icons">notifications_active</span>
-            <img class="avatar" src="yoda.jpg" alt="Avatar">
-            <div class="user-name"><b>Morgan Oakley</b></div>
-        </div>
-
-        <div class="banner2">
-            <img class="avatar" src="yoda.jpg" alt="Avatar">
-            <div class="greeting-container">
-                <div class="greeting">Hi there,</div>
-                <div class="user-name">Morgan Oakley (@morgan)</div>
+        <div class="banner-container">
+            <div class="banner1">
+                <span id="search-button" class="material-icons">search</span>
+                <div class="search-bar"></div>
+                <span id="notifications" class="material-icons">notifications_active</span>
+                <img id="yoda-img1" class="avatar" src="yoda.jpg" alt="Avatar">
+                <div class="user-name"><b>Morgan Oakley</b></div>
             </div>
-            <button class="new-button">New</button>
-            <button class="upload-button">Upload</button>
-            <button class="share-button">Share</button>
+
+            <div class="banner2">
+                <img id="yoda-img2" class="avatar" src="yoda.jpg" alt="Avatar">
+                <div class="greeting-container">
+                    <div class="greeting">Hi there,</div>
+                    <div class="user-name">Morgan Oakley (@morgan)</div>
+                </div>
+                <button class="new-button">New</button>
+                <button class="upload-button">Upload</button>
+                <button class="share-button">Share</button>
+            </div>
         </div>
 
-        <div class="dashboard-siderbar-container">
+        <div class="dashboard-sidebar-container">
 
-            <div class="your-stories">Your Projects</div>
+            <div class="your-project">Your Projects</div>
 
             <div class="dashboard">
                 <div class="cards">
@@ -113,40 +99,40 @@
             <div class="announcements-title">Announcements</div>
 
             <div class="announcement">
-                <div class="announcement1">
-                    <b>Site Maintenence</b>
+                <div class="specific-announcement">
+                    <b>Site Maintenence</b><br>
                     The site will be undergoing maintenence on the 29th of 3025.
                     We apologise for any inconvenience.
                 </div>
-                <div class="announcement2">
-                    <b>Community Share Day</b>
+                <div class="specific-announcement">
+                    <b>Community Share Day</b><br>
                     We invite all to share their stories on this community day!
                     Show off your creating writing skills to the world!
-                    Prizes included.
                 </div>
-                <div class="announcement3">
-                    <b>Updated Privacy Policy</b>
+                <div class="specific-announcement" id="last">
+                    <b>Updated Privacy Policy</b><br>
                     Please read our updated privacy policy.
+                    We apologise for any intrusions.
                 </div>
             </div>
     
             <div class="trending-title">Trending Users</div>
             
             <div class="trending">
-                <div class="user1">
-                    <b>@tegan</b>
+                <div class="user">
+                    <a href="">@tegan</a><br>
                     World Peace Builder
                 </div>
-                <div class="user2">
-                    <b>@morgan</b>
+                <div class="user">
+                    <a href="">@morgan</a><br>
                     Za Worldu
                 </div>
-                <div class="user3">
-                    <b>@kendall</b>
+                <div class="user">
+                    <a href="">@kendall</a><br>
                     Story Chef
                 </div>
-                <div class="user4">
-                    <b>@alex</b>
+                <div class="user" id="last">
+                    <a href="">@alex</a><br>
                     No Traffic Maker
                 </div>
             </div>
