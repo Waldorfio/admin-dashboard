@@ -35,8 +35,17 @@ a {
         background-color: rgb(25,146,212);
         color: white;
     }
+        #dashboard-logo {
+            padding: 15px 10px 0 15px;
+        }
         #dashboard-logo > a {
-            font-size: 22px;
+            padding-left: 10px;
+            font-size: 26px;
+        }
+        .material-icons {
+            justify-self: start;
+            align-self: center;
+
         }
     .banner-container {
         display: grid;
@@ -73,6 +82,9 @@ a {
             grid-template-columns: 1fr 4fr repeat(3, 1fr);
         }
             #yoda-img2 {
+                align-self: center;
+                justify-self: center;
+
                 border-radius: 50%;
                 height: 100px;
                 width: auto;
@@ -83,8 +95,21 @@ a {
 
                 font-weight: bold;
             }
+                .greeting {
+                    align-self: end;
+
+                    font-size: 12px;
+                }
+                .user-name2 {
+                    align-self: start;
+
+                    font-size: 20px;
+                }
             button {
-                margin: 10px 2px 10px 2px;
+                align-self: center;
+                justify-self: center;
+
+                padding: 10px 30px 10px 30px;
 
                 /* Removing default button effects */
                 border-color: #fff;
@@ -92,7 +117,7 @@ a {
                 /* Adding new effects */
                 background-color: rgb(25,146,212);
                 color: white;
-                border-radius: 15px;
+                border-radius: 20px;
                 font-weight: bold;
             }
 
