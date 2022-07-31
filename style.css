@@ -26,11 +26,13 @@ a {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
+
+    height: 100vh;
 }
     .sidebar-left {
         grid-row: 1/5;
         display: grid;
-        grid-template-rows: 2fr repeat(6, 1fr) 2fr repeat(3, 1fr);
+        grid-template-rows: 0.1fr repeat(6, 0.04fr) 0.07fr repeat(3, 0.04fr);
 
         background-color: rgb(25,146,212);
         color: white;
@@ -46,7 +48,20 @@ a {
             justify-self: start;
             align-self: center;
 
+            padding-left: 20px;
+
         }
+            .material-icons > a {
+                padding-left: 20px;
+                padding-right: 10px;
+
+                font-size: 20px;
+            }
+        /* #icons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        } */
+
     .banner-container {
         display: grid;
         grid-template-rows: 1fr 2fr;
@@ -65,6 +80,7 @@ a {
             #yoda-img1 {
                 justify-self: center;
 
+                padding: 5px;
                 border-radius: 50%;
                 height: 50px;
                 width: auto;
@@ -85,6 +101,7 @@ a {
                 align-self: center;
                 justify-self: center;
 
+                padding: 5px;
                 border-radius: 50%;
                 height: 100px;
                 width: auto;
@@ -119,6 +136,12 @@ a {
                 color: white;
                 border-radius: 20px;
                 font-weight: bold;
+            }
+            .new-button {
+                justify-self: end;
+            }
+            .share-button {
+                justify-self: start;
             }
 
 /* Dashboard & Announcements*/
